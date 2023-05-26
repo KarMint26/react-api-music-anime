@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  @apply dark:bg-black overflow-x-hidden bg-slate-100;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::selection {
+  @apply bg-rose-600 text-white;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.nav-link {
+  transform: scale(0);
+}
+
+.nav-link.active {
+  transform: scale(1);
+}
+
+/* Spinner */
+
+.spinner {
+  position: relative;
+}
+
+.spinner::before,
+.spinner::after {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.spinner::before {
+  width: 15.7px;
+  height: 15.7px;
+  background: #474bff;
+}
+
+.spinner::after {
+  width: 56px;
+  height: 56px;
+  animation: spinner-y7ej37 1s infinite linear;
+  border: 11.2px solid #474bff;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+@keyframes spinner-y7ej37 {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* Spinner end */
+
+/* Button back to top */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  padding: 1.7rem;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  @apply bg-gradient-to-tr from-orange-400 to-rose-600;
+}
+
+/* Button end */
