@@ -49,7 +49,7 @@ const NavigationBar = () => {
   }, []);
   return (
     <>
-      <div className="container w-screen flex justify-between items-center px-6 sm:px-10 lg:px-14 py-3 sm:py-5 lg:pr-0">
+      <div className="w-screen flex justify-between items-center px-6 lg:px-14 py-3 sm:py-5 sm:px-14">
         <div className="relative">
           <button
             onClick={() => handleMenu()}

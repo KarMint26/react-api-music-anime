@@ -522,40 +522,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
 .fixed {
   position: fixed;
 }
@@ -580,16 +546,8 @@ video {
   top: 4rem;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
 .z-\[99999\] {
   z-index: 99999;
-}
-
-.z-\[99999999999999\] {
-  z-index: 99999999999999;
 }
 
 .mx-auto {
@@ -624,21 +582,8 @@ video {
   display: flex;
 }
 
-.h-\[100\%\] {
-  height: 100%;
-}
-
 .h-screen {
   height: 100vh;
-}
-
-.h-fit {
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.w-\[100\%\] {
-  width: 100%;
 }
 
 .w-\[300px\] {
@@ -1086,9 +1031,9 @@ body {
     gap: 1.25rem;
   }
 
-  .sm\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+  .sm\:px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 
   .sm\:px-60 {
@@ -1134,10 +1079,6 @@ body {
   .lg\:px-14 {
     padding-left: 3.5rem;
     padding-right: 3.5rem;
-  }
-
-  .lg\:pr-0 {
-    padding-right: 0px;
   }
 
   .lg\:ps-14 {
